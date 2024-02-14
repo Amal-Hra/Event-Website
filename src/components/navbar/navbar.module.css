@@ -1,0 +1,16 @@
+.container {
+  padding: 100px;
+  background-color: #e4d8ca;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  font-family: "Times New Roman", Times, serif;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2rem;
+}

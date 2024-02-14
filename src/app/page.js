@@ -1,112 +1,279 @@
 import Image from "next/image";
+import Card from "@/components/card/Card";
+import styles from "./home.module.css";
+import "../components/card/card.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+    <main
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontFamily: "'Times New Roman', Times, serif",
+      }}
+    >
+      <div
+        style={{
+          flex: "1",
+          width: "100%",
+          borderTop: "20px solid black",
+          height: "400px",
+        }}
+      >
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/home.jpeg"
+          alt="Top Image"
+          layout="responsive"
+          width={1200}
+          height={300}
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div
+        style={{
+          flex: "1",
+          width: "100%",
+          backgroundColor: "#f5f1ec",
+          marginTop: "30px",
+          padding: "40px",
+          borderTop: "2px solid black",
+          textAlign: "center",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "40px",
+            fontWeight: "bold",
+            fontStyle: "italic",
+            fontFamily: "'Times New Roman', Times, serif",
+            backgroundColor: "#fcfaf9",
+            border: "2px",
+            borderRadius: "10%",
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          Bienvenue sur ArtÉclat : Votre Portail Vers l'Art et la Culture
+        </h2>
+        <br />
+        <div style={{ fontWeight: "bold", marginTop: "10px" }}>
+          <p
+            style={{
+              marginTop: "20px",
+              marginBottom: "20px",
+              color: "#c1a788",
+              fontSize: "25px",
+              textAlign: "left",
+            }}
+          >
+            Découvrez un univers d'art et de culture avec ArtÉclat.
           </p>
-        </a>
+          <p
+            style={{
+              marginBottom: "20px",
+              color: "#a68256",
+              fontSize: "20px",
+              textAlign: "right",
+            }}
+          >
+            Notre plateforme vous ouvre les portes d'un monde d'événements
+            artistiques stimulants.
+          </p>
+          <p
+            style={{
+              marginBottom: "24px",
+              color: "#745b3c",
+              fontSize: "20px",
+              textAlign: "center",
+            }}
+          >
+            Trouvez facilement des expositions, des concerts, des spectacles et
+            bien plus encore, le tout réuni en un seul endroit.
+          </p>
+          <p
+            style={{
+              marginBottom: "20px",
+              color: "#423322",
+              fontSize: "18px",
+              textAlign: "justify",
+            }}
+          >
+            ArtÉclat simplifie votre expérience artistique en vous permettant de
+            découvrir, réserver et partager vos événements préférés en toute
+            simplicité.
+          </p>
+          <p
+            style={{
+              color: "#201911",
+              fontSize: "25px",
+              textAlign: "centert",
+              marginTop: "40px",
+            }}
+          >
+            Plongez dans l'art avec nous et laissez-vous inspirer par une
+            multitude d'expériences uniques.
+          </p>
+        </div>
+      </div>
+      {/* Calendrier d'événements */}
+      <div
+        style={{
+          flex: "1",
+          width: "100%",
+          height: "400px",
+          textAlign: "center",
+          backgroundColor: "#f5f1ec",
+          borderBottom: "2px solid black",
+        }}
+      ></div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <h2
+        style={{
+          fontSize: "38px",
+          marginBottom: "20px",
+          marginTop: "30px",
+          textAlign: "center",
+        }}
+      >
+        Calendrier d'Événements
+      </h2>
+      <div
+        style={{
+          fontSize: "18px",
+          textAlign: "center",
+          marginRight: "20px",
+          backgroundColor: "#efe4df",
+          height: "200px",
+          paddingTop: "35px",
+        }}
+      >
+        <p
+          style={{
+            fontSize: "20px",
+            textAlign: "center",
+            marginRight: "20px",
+            marginBottom: "18px",
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          Explorez dès maintenant les événements artistiques à venir !
+        </p>
+        <p
+          style={{
+            fontSize: "20px",
+            textAlign: "center",
+            marginRight: "20px",
+            marginBottom: "18px",
+            paddingLeft: "15px",
+          }}
+        >
+          Notre calendrier en ligne vous réserve des festivals, des expositions
+          artistiques, des spectacles et bien plus encore.
+        </p>
+        <p
+          style={{
+            fontSize: "20px",
+            textAlign: "center",
+            marginRight: "20px",
+            marginBottom: "18px",
+          }}
+        >
+          Ne manquez aucune occasion de découvrir l'art sous toutes ses formes !
+        </p>
+      </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      {/* Cards */}
+      <div
+        style={{
+          flex: "1",
+          margin: "100px 0 20px 2px",
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+      >
+        <Card
+          title="Lumière Éphémère"
+          src="/lumiereephemere3.jpeg"
+          alt="image 1"
+          description="  10 avril 2024, Heure : 18h00.
+          Galerie d'Art Éphémère"
+          isProfile
+          buttonLink="/event1"
+          style={{ flexBasis: "30%" }}
+        />
+        <Card
+          title="Exposition d'Art Contemporain"
+          src="/artcontemporain2.jpeg"
+          alt="image 2"
+          description="20 mai 2024, Heure : 16h00 .
+				 Musée d'Art Moderne"
+          isProfile
+          buttonLink="/event2"
+          style={{ flexBasis: "30%" }}
+        />
+        <Card
+          title="Exposition de Sculptures"
+          src="/sculpture2.jpeg"
+          alt="image 3"
+          description="5 juillet 2024 - 15 juillet 2024	.
+          Musée des Arts Insolites"
+          isProfile
+          buttonLink="/event3"
+          style={{ flexBasis: "30%" }}
+        />
+      </div>
+      <div
+        style={{
+          flex: "1",
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+          margin: "150px 0 20px 2px",
+        }}
+      >
+        <div
+          style={{
+            flex: "1",
+            marginRight: "20px",
+            marginLeft: "20px",
+            width: "50%",
+            display: "flex",
+            flexWrap: "wrap",
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+          <Image
+            src="/home2.jpeg"
+            alt="Bottom Image"
+            layout="responsive"
+            width={300}
+            height={600}
+          />
+        </div>
+        <div style={{ flex: "1", width: "100%", padding: "0 20px" }}>
+          <h2
+            style={{
+              fontSize: "38px",
+              marginBottom: "20px",
+              marginTop: "30px",
+              textAlign: "left",
+            }}
+          >
+            Explorez l'Art qui Vous Ressemble
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          <p
+            style={{
+              fontSize: "20px",
+              marginTop: "20px",
+              textAlign: "left",
+            }}
+          >
+            Explorez une multitude d'événements artistiques pour trouver celui
+            qui éveillera votre passion. Que vous recherchiez une exposition
+            captivante, un concert intimiste ou une performance théâtrale, notre
+            plateforme regorge d'opportunités pour découvrir l'art qui vous
+            parle. Laissez-vous inspirer par la créativité et trouvez votre
+            prochaine aventure artistique dès aujourd'hui.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </div>
       </div>
     </main>
   );

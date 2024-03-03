@@ -1,0 +1,121 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.topImageContainer {
+  flex: 1;
+  width: 100%;
+  border-top: 20px solid black;
+  height: 400px;
+}
+
+.topImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.welcomeContainer {
+  flex: 1;
+  width: 100%;
+  background-color: #f5f1ec;
+  margin-top: 30px;
+  padding: 40px;
+  border-top: 2px solid black;
+  text-align: center;
+}
+
+.welcomeTitle {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fcfaf9;
+  border: 2px;
+  border-radius: 10%;
+}
+
+.welcomeContent {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.welcomeText {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 25px;
+}
+
+.eventCalendar {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-color: #f5f1ec;
+  border-bottom: 2px solid black;
+}
+
+.calendarTitle {
+  font-size: 38px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.calendarContent {
+  font-size: 18px;
+  margin-right: 20px;
+  background-color: #efe4df;
+  height: 200px;
+  padding-top: 35px;
+}
+
+.calendarText {
+  margin-bottom: 18px;
+  margin-right: 20px;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.cardContainer {
+  flex: 1;
+  margin: 90px 0 10px 2px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exploreArt {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 120px 0 20px 2px;
+}
+.bottomImageContainer {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.exploreArtContent {
+  flex: 1;
+  width: 100%;
+  padding: 0 20px;
+}
+.exploreArtText {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+.exploreArtTitle {
+  font-size: 38px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: left;
+}

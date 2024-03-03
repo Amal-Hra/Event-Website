@@ -1,0 +1,47 @@
+/* styles.css */
+
+.footer {
+  background-color: #e4d8ca;
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+.footerContent {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogo {
+  width: 250px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+}
+
+.footerTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footerAuthors {
+  font-size: 1rem;
+}
+
+.footerInfo {
+  font-size: 0.9rem;
+}
+
+.footerCopyright {
+  font-size: 0.9rem;
+}
+
+.footerContact {
+  font-size: 0.9rem;
+}
+
+.footerLink {
+  cursor: pointer;
+  text-decoration: underline;
+}

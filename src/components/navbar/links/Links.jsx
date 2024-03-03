@@ -1,5 +1,9 @@
 "use client";
+<<<<<<< HEAD
 import React, {useState } from "react";
+=======
+import React, { Fragment, useState } from "react";
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
 import Styles from "./links.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -33,7 +37,11 @@ const Links = () => {
 
   const onClickHander = () => {
     setOpen(!open);
+<<<<<<< HEAD
     document.body.classList.toggle("menuOpen"); 
+=======
+    document.body.classList.toggle("menuOpen"); // Ajoute ou supprime la classe 'menuOpen' au body
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
   };
 
   return (

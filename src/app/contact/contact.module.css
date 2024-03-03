@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+=======
+/* contact.module.css */
+
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   font-family: "Times New Roman", Times, serif;
+<<<<<<< HEAD
   margin-bottom: calc(20px + 72px);
+=======
+  margin-bottom: calc(20px + 72px); /* Prend en compte la hauteur du footer */
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
   min-height: calc(100vh - 92px);
 }
 
@@ -24,7 +33,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   height: 20%;
+=======
+  height: 20%; /* Assurez-vous que le conteneur occupe toute la hauteur */
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
 }
 .mainText {
   font-weight: bold;
@@ -57,7 +70,11 @@
 }
 
 .form {
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+  margin-bottom:20px; 
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
   min-height: 300px;
 }
 .divform {

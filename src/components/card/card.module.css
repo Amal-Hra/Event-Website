@@ -51,11 +51,22 @@
 
 @media (max-width: 768px) {
   .cards {
+<<<<<<< HEAD
     flex-direction: column;
+=======
+    flex-direction: column; 
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
   }
 
   .cardContainer {
     margin-left: 10px;
+<<<<<<< HEAD
     margin-right: 10px;
   }
 }
+=======
+    margin-right: 10px; 
+  }
+}
+
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a

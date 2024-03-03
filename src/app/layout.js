@@ -13,13 +13,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body className="container">
         <Navbar />
+=======
+      <body className="container" >
+        <Navbar/>
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
 
         {children}
 
         <Footer />
+<<<<<<< HEAD
       </body>
+=======
+
+        </body>
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
     </html>
   );
 }

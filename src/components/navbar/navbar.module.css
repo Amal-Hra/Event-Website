@@ -10,6 +10,7 @@
   top: 0;
   z-index: 1;
 }
+<<<<<<< HEAD
 .container a{
   border-radius: 50px;
   padding: 10px;
@@ -32,6 +33,8 @@
   margin-right: 10px;
 }
 
+=======
+>>>>>>> 8bf1680e9d5a086f88058c74698ef858d3469f2a
 
 .logo {
   font-size: 2rem;
